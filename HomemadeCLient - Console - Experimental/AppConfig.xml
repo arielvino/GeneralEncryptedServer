@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<appSettings>
+		<ServerPublicKey>
+			<RSAKeyValue>
+				<Modulus>0fc/GATdIOYCYmT6f20vzQxQZtrvYtWalH5l6WEoebnNHy9dLyfFzw/jz4GIHhFfFssF1EBi064m8oKGWtNaWFnowCJjStFEMLFD4INagwfYCs6T+lbDTefYFk1Uts4mcwqGndbVMGNi54hNTFCFac6UsRvc8rv1GaM5hNZJ2puwUGMZ2eKU/ocSl91u/T8o/Y4h5DPE75cCXFQuIibGUzclZv0spffr9lSDy7QtTIcvYgZizNTP/L5dJakBoW/g6ldZssmqe+jmhwQOxJqR4rPFsOFVqzExiyjr4TdWCChaiOsf9z8U3JxdmTzMBJ2BgNudnj5H0KWRdveDEU0kPCWqcyxHHShlTARkT0VaRmFy2JpXk17YVWPnW0JxDH64kKA3hyLpiExeC70up9IKXfyE0oYpUZFpPgF1v6fYHJv+ynP6r1ElzWqffksP2xx0JgRJjzNjy6SzMAg7GLlgSnDn1rziwn2CdmGTBVmk1DEh9C7uqXvSPosM6dKPzyQ+EQ+FxAD4TM5B0yMPiYvt9nKgbP5c3fOSNW7x3BfdfVO+QxGXTDybQVGx7lbXWMTRaBZ6SV6jnpGtgVvThFcv/6Ryb/5ee4royRAVBvAE+itvZa2+yw82Ru6wdCwhLhdY5boRY1vUuMuYot7nO7Ql7DTCSH6hYRt9h2Q5VcskVrU=</Modulus>
+				<Exponent>AQAB</Exponent>
+			</RSAKeyValue>
+		</ServerPublicKey>
+		<IpAddress>127.0.0.1</IpAddress>
+		<Port>57463</Port>
+	</appSettings>
+</configuration>

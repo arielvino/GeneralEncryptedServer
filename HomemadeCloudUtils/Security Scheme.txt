@@ -1,0 +1,35 @@
+Version: 0.0.0
+
+Registration:
+User ==>> [userName, sha-512(password), passwordSalt, publicKey, encryptedPrivateKey]
+
+Authentication by password:
+User ==>> [userName]
+Server ==>> [passwordSalt, randomChallange]
+User ==>> [sha-256(sha-512(password) + randomChallenge)]
+Server ==>> [encryptedPrivateKey]
+	User decrypt the privateKey with the secretKey derived from the pasword.
+
+Set authentication token:
+Server ==>> [randomSequence]
+	User xor the secretKey with the random sequence and store the result.
+Server ==>> [token]
+	User store the token.
+		{Both have expiration date, which apply to server and client}
+
+Authentication by token:
+User ==>> [userName]
+Sever ==>> [randomChallenge]
+User ==>> [sha-256(token + randomChallenge)]
+Server ==>> [randomSequence]
+	User xor the XORed secretKey with the randomSequence to retrieve the secretKey and decrypt the privateKey.
+	{You may set a new token at this point}
+
+
+Transport layer encription:
+		{The client need to pre include the server's public key}
+User ==>> [serverPublicKey(randomChalenge)]
+Server ==>> [randomChalenge]
+	User decrypt the randomChallenge using the serverPublicKey
+User ==>> [serverPublicKey(newSecretKey)]
+	Server ddecrypt the secret key, and both sides will use it.
